@@ -283,15 +283,17 @@
   </div>
 
   <script>
-    const password = "220724"; // Yeni şifre
+    const baseURL = "https://Enesarslan833.github.io/Azrauzun/";
+
+    const password = "220724"; // Şifre
     const songs = [
-      "muzikler/sarki1.mp3",
-      "muzikler/sarki2.mp3",
-      "muzikler/sarki3.mp3",
-      "muzikler/sarki4.mp3",
-      "muzikler/sarki5.mp3",
-      "muzikler/sarki6.mp3",
-      "muzikler/sarki7.mp3"
+      baseURL + "muzikler/sarki1.mp3",
+      baseURL + "muzikler/sarki2.mp3",
+      baseURL + "muzikler/sarki3.mp3",
+      baseURL + "muzikler/sarki4.mp3",
+      baseURL + "muzikler/sarki5.mp3",
+      baseURL + "muzikler/sarki6.mp3",
+      baseURL + "muzikler/sarki7.mp3"
     ];
     let current = 0;
     const player = document.getElementById("player");
@@ -367,7 +369,7 @@
       "🐵🐵🐵🐵🐵🐵🐵🐵🐵🐵🐵🐵🐵🐵"
     ];
 
-    const photoList = Array.from({ length: 18 }, (_, i) => `fotolar/foto${i + 1}.jpg`);
+    const photoList = Array.from({ length: 18 }, (_, i) => baseURL + `fotolar/foto${i + 1}.jpg`);
     const positions = [
       [10, 5], [15, 20], [20, 35], [25, 50], [30, 65], [35, 80],
       [40, 10], [45, 25], [50, 40], [55, 55], [60, 70], [65, 15],
